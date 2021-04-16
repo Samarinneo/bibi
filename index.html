@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'montserrat';
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .box {
+            width: 200px;
+            height: 50px;
+            margin: 20px;
+            padding: 20px;
+            background-color: olive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            transition: all 0.3s ease;
+
+        }
+
+        .box:hover {
+            background: #000;
+            transform: translateY(5px);
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: crimson;
+            display: none;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: violet;
+            border-radius: 50%;
+            display: none;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+
+        .img_cont {
+            width: 600px;
+
+        }
+
+        /* .bibi {
+            display: none;
+        } */
+
+        .img_cont img {
+
+            width: 100%
+        }
+
+        .dildo {
+            width: 600px;
+            animation: move 1s infinite alternate;
+            display: none;
+        }
+
+        .dildo img {
+            width: 25%;
+            position: absolute;
+            top: 000px;
+            left: 230px;
+
+        }
+
+        .active {
+            display: block;
+        }
+
+        .none {
+            display: none;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateY(-220px);
+            }
+
+            to {
+                transform: translateY(-150px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt iste, ducimus, atque deserunt autem
+                debitis beatae tempore perspiciatis quod nostrum nobis laborum dignissimos aspernatur cum voluptatum
+                dolorum alias minus? Dolorum ime ipsam itaque totam. res. At assumenda porro, perspiciatis nesciunt
+                saepe quia Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos possimus odio velit veritatis culpa.
+                Esse at velit placeat amet enim officia quaerat tenetur magnam vitae cumque, voluptatibus voluptates
+                veniam quibusdam rem consequuntur magni dolor aspernatur nostrum minima nihil illum!aerat explicabo
+                beatae ratione
+                adipisci maxime ipsam itaque totam. res. At assumenda porro, perspiciatis nesciunt saepe quia Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos possimus odio velit veritatis culpa.
+                Esse at velit placeat amet enim officia quaerat tenetur magnam vitae cumque, voluptatibus voluptates
+                veniam quibusdam rem consequuntur magni dolor aspernatur nostrum minima nihil illum! ipsum dolor sit
+                amet consectetur adipisicing elit. Molestiae eos possimus odio velit veritatis culpa.
+                Esse at velit placeat amet enim officia quaerat tenetur magnam vitae cumque, voluptatibus voluptates
+                veniam quibusdam rem consequuntur magni dolor aspernatur nostrum minima nihil illum!
+                met consectetur adipisicing elit. Molestiae eos po in
+                te cumque! Hic deserunt rerum illo sunt nam reprehenderit vel officia cupiditate, commodi ut?</p>
+        </div>
+        <div class="box" id="box">
+            huy na rot bibi
+        </div>
+        <!-- <div class="box2" id="box2">
+            pizda
+        </div>
+        <div class="box3" id="box3">
+            zalupa
+        </div> -->
+
+        <div class="bibi">
+            <div class="img_cont">
+                <img src="bibi.png" alt="">
+            </div>
+            <div class="dildo ">
+                <img src="dildo.png" alt="">
+            </div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur porro suscipit nihil commodi provident,
+            ipsum dolor sit amet consectetur nimi perferendi
+            eligendi itaque consequatur ratione aliquid dicta officia aut ab est. Aperiam tempore quas sed natus
+            dolores?
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.box').on('click', function () {
+                $('.box2').toggleClass('active');
+                $('.box3').toggleClass('active');
+                $('.box2').toggleClass('round');
+                $('.dildo').toggleClass('active');
+            })
+
+            $('#box3').on('click', function () {
+                $('.box').toggle({ 'display': 'block' });
+                $('.box').toggleClass('round');
+            })
+            $('#box2').on('click', function () {
+                $('.box3').toggle({ 'display': 'block' });
+                $('.box').toggleClass('round');
+            })
+
+
+
+        })
+
+
+    </script>
+</body>
+
+</html>
